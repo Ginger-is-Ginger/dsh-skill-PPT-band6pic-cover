@@ -98,6 +98,8 @@ DeepSeek Harness 接入 Univer Office SDK 插件：[dsh-univer-office](https://g
 
 - 参考效果图与实现思路来自：[飘带PPT，用了不烧心！ -虎设PPT](https://www.bilibili.com/video/BV1WY446SEsv)，一位优秀的 PPT 设计教程博主；
 
+- B站网友 @哦哦oi对的对的、@一声声似一声、@落秋桑さん 的激励快速开发；
+
 - 本 skill 全程使用 DeepSeek-V41-Flash 模型编写，仅花费2.3（skill 编写）+0.2（新工作区测试）=2.5元。~~**大肥鱼牛逼！**~~
 
 ## 📄 开源协议
