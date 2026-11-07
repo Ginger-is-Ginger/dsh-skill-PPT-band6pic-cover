@@ -1,0 +1,426 @@
+{
+ "page": {
+  "width_pt": 960.0,
+  "height_pt": 540.0,
+  "width_emu": 12192000,
+  "height_emu": 6858000,
+  "emu_per_pt": 12700,
+  "background": "#ffffff",
+  "has_text": false
+ },
+ "style": {
+  "stroke_color": "#000000",
+  "stroke_width_pt": 1.0,
+  "fill": "none",
+  "line_cap": "flat",
+  "line_join": "miter",
+  "source_note": "a:ln has only a solidFill (schemeClr tx1 -> dk1 = 000000); width comes from the shape style lnRef idx=2 -> theme lnStyleLst[1] w=12700 EMU = 1 pt"
+ },
+ "elements": [
+  {
+   "n": 1,
+   "z": 1,
+   "shape_id": 5,
+   "name": "任意多边形: 形状 4",
+   "role": "freeform closed bezier ribbon (silk fold)",
+   "kind": "freeform",
+   "frame_emu": [
+    4654330,
+    -34260,
+    7502412,
+    8599002
+   ],
+   "frame_pt": [
+    366.482677,
+    -2.697638,
+    590.741102,
+    677.086772
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   },
+   "path": {
+    "closed": true,
+    "space_emu": [
+     7502412,
+     8599002
+    ],
+    "space_pt": [
+     590.741102,
+     677.086772
+    ],
+    "commands": [
+     [
+      "moveTo",
+      [
+       222470,
+       654020
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       386723,
+       -624447,
+       931977,
+       371233,
+       1461990,
+       339060
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       1992003,
+       306887,
+       2750617,
+       342447,
+       3402550,
+       460980
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       4054483,
+       579513,
+       5437937,
+       826740,
+       5373590,
+       1050260
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       5309243,
+       1273780,
+       3124843,
+       1568420,
+       3016470,
+       1802100
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       2908097,
+       2035780,
+       4924857,
+       2125527,
+       4723350,
+       2452340
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       4521843,
+       2779153,
+       1348537,
+       3353193,
+       1807430,
+       3762980
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       2266323,
+       4172767,
+       7121110,
+       4406447,
+       7476710,
+       4911060
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       7832310,
+       5415673,
+       4388070,
+       6275887,
+       3941030,
+       6790660
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       3493990,
+       7305433,
+       5371897,
+       7796500,
+       4794470,
+       7999700
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       4217043,
+       8202900,
+       1241857,
+       9234140,
+       476470,
+       8009860
+      ]
+     ],
+     [
+      "cubicBezTo",
+      [
+       -288917,
+       6785580,
+       58217,
+       1932487,
+       222470,
+       654020
+      ]
+     ],
+     [
+      "Z",
+      []
+     ]
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "z": 2,
+   "shape_id": 8,
+   "name": "矩形 7",
+   "role": "rect frame A (outer top-right)",
+   "kind": "rect",
+   "frame_emu": [
+    6593840,
+    304800,
+    3444240,
+    1493520
+   ],
+   "frame_pt": [
+    519.2,
+    24.0,
+    271.2,
+    117.6
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 3,
+   "z": 3,
+   "shape_id": 9,
+   "name": "矩形 8",
+   "role": "rect frame B (nested)",
+   "kind": "rect",
+   "frame_emu": [
+    7658100,
+    995680,
+    2379980,
+    2040890
+   ],
+   "frame_pt": [
+    603.0,
+    78.4,
+    187.4,
+    160.7
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 4,
+   "z": 4,
+   "shape_id": 10,
+   "name": "矩形 9",
+   "role": "rect frame C (nested)",
+   "kind": "rect",
+   "frame_emu": [
+    7658100,
+    1798320,
+    1729740,
+    1238250
+   ],
+   "frame_pt": [
+    603.0,
+    141.6,
+    136.2,
+    97.5
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 5,
+   "z": 5,
+   "shape_id": 11,
+   "name": "矩形 10",
+   "role": "rect frame D (mid)",
+   "kind": "rect",
+   "frame_emu": [
+    6414135,
+    2377440,
+    2973705,
+    1902800
+   ],
+   "frame_pt": [
+    505.05,
+    187.2,
+    234.15,
+    149.826772
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 6,
+   "z": 6,
+   "shape_id": 12,
+   "name": "矩形 11",
+   "role": "rect frame E (largest, bottom-right)",
+   "kind": "rect",
+   "frame_emu": [
+    6414135,
+    3657600,
+    5742607,
+    3200400
+   ],
+   "frame_pt": [
+    505.05,
+    288.0,
+    452.17378,
+    252.0
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 7,
+   "z": 7,
+   "shape_id": 13,
+   "name": "矩形 12",
+   "role": "rect frame F (lower right)",
+   "kind": "rect",
+   "frame_emu": [
+    8524240,
+    4968240,
+    3632502,
+    1889760
+   ],
+   "frame_pt": [
+    671.2,
+    391.2,
+    286.02378,
+    148.8
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 8,
+   "z": 8,
+   "shape_id": 15,
+   "name": "椭圆 14",
+   "role": "ellipse band 1 (wide left, mid-height)",
+   "kind": "ellipse",
+   "frame_emu": [
+    999535,
+    1571472,
+    8544560,
+    2140880
+   ],
+   "frame_pt": [
+    78.703543,
+    123.737953,
+    672.8,
+    168.573228
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 9,
+   "z": 9,
+   "shape_id": 17,
+   "name": "椭圆 16",
+   "role": "ellipse band 2 (top, spills off top edge)",
+   "kind": "ellipse",
+   "frame_emu": [
+    1393870,
+    -1033216,
+    10040530,
+    4233616
+   ],
+   "frame_pt": [
+    109.753543,
+    -81.355591,
+    790.592913,
+    333.355591
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  },
+  {
+   "n": 10,
+   "z": 10,
+   "shape_id": 19,
+   "name": "椭圆 18",
+   "role": "ellipse band 3 (right, spills off right edge)",
+   "kind": "ellipse",
+   "frame_emu": [
+    4771595,
+    2255520,
+    10040530,
+    4233616
+   ],
+   "frame_pt": [
+    375.716142,
+    177.6,
+    790.592913,
+    333.355591
+   ],
+   "fill": "none",
+   "stroke": {
+    "color": "#000000",
+    "width_pt": 1.0,
+    "width_emu": 12700
+   }
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "_about": "Operation ledger for phase B (design pass). 'rect'/'ellipse' are element numbers of references/page-spec.json; 'ribbon' names one of the six identical copies of element 1. Modes use PowerPoint's Merge Shapes names: intersect = 相交, subtract = 剪除 (first shape minus the second).",
+  "_naming_note": "Element labels are the ones the brief uses; they are carried into design.json and the verifier so every intermediate result stays traceable.",
+  "_brief_resolution": "The brief's step 9 says 'reference images b to f (5 images) with elements 12-2 to 12-5 (5 elements)' -- 12-2..12-5 is only four elements, while the stated output 13-2..13-6 is five. Five images require five elements, so the mapping used here is 12-2..12-6 <- b..f. Reference image g is not consumed by the brief.",
+  "ribbon_copies": ["1", "1-2", "1-3", "1-4", "1-5", "1-6"],
+  "stage1": [
+    { "out": "11-1", "rect": 2, "ribbon": "1", "mode": "intersect", "brief": "step 2: element 2 ∩ curve 1" },
+    { "out": "11-3", "rect": 4, "ribbon": "1-3", "mode": "intersect", "brief": "step 2: element 4 ∩ curve 1-3" },
+    { "out": "11-5", "rect": 6, "ribbon": "1-5", "mode": "intersect", "brief": "step 2: element 6 ∩ curve 1-5" },
+    { "out": "11-2", "rect": 3, "ribbon": "1-2", "mode": "subtract", "brief": "step 3: element 3 − curve 1-2" },
+    { "out": "11-4", "rect": 5, "ribbon": "1-4", "mode": "subtract", "brief": "step 3: element 5 − curve 1-4" },
+    { "out": "11-6", "rect": 7, "ribbon": "1-6", "mode": "subtract", "brief": "step 3: element 7 − curve 1-6" }
+  ],
+  "stage2": [
+    { "out": "11-1-1", "from": "11-1", "ellipse": 8, "mode": "subtract", "brief": "step 4: 11-1 − ellipse 8" },
+    { "out": "11-2-1", "from": "11-2", "ellipse": 9, "mode": "intersect", "brief": "step 5: 11-2 ∩ ellipse 9" },
+    { "out": "11-5-1", "from": "11-5", "ellipse": 10, "mode": "intersect", "brief": "step 6: 11-5 ∩ ellipse 10" }
+  ],
+  "final_order": ["11-1-1", "11-2-1", "11-3", "11-4", "11-5-1", "11-6"],
+  "renumber": {
+    "11-1-1": "12-1",
+    "11-2-1": "12-2",
+    "11-3": "12-3",
+    "11-4": "12-4",
+    "11-5-1": "12-5",
+    "11-6": "12-6"
+  },
+  "fills": [
+    { "index": 1, "image": "a", "from": "12-1" },
+    { "index": 2, "image": "b", "from": "12-2" },
+    { "index": 3, "image": "c", "from": "12-3" },
+    { "index": 4, "image": "d", "from": "12-4" },
+    { "index": 5, "image": "e", "from": "12-5" },
+    { "index": 6, "image": "f", "from": "12-6" }
+  ],
+  "fill_rule": {
+    "type": "picture",
+    "mode": "tile",
+    "tile_as_texture": true,
+    "alignment": "ctr",
+    "scale": "k = max(element_width / image_pixel_width, element_height / image_pixel_height); scaleX = scaleY = k",
+    "scale_semantics": "In this Facade a tile scale of k renders one tile k × image pixels wide/high in slide points, so k computed as above makes a single tile exactly cover the element (cover fit) with no seam."
+  },
+  "stroke": {
+    "line_type": "gradient",
+    "width_pt": 5,
+    "width_emu": 63500,
+    "gradient_stops": [
+      { "position": 0.2, "color": "#FFFFFF", "transparency": 1.0, "opacity": 0.0 },
+      { "position": 0.5, "color": "#FFFFFF", "transparency": 0.0, "opacity": 1.0 },
+      { "position": 0.8, "color": "#FFFFFF", "transparency": 1.0, "opacity": 0.0 }
+    ],
+    "note": "The brief gives transparency (透明度): 100% / 0% / 100%. The Facade stores opacity, so the ledger keeps both columns -- opacity = 1 - transparency. In OOXML this becomes a:gs alpha 0 / 100000 / 0 at pos 20000 / 50000 / 80000."
+  }
+}
